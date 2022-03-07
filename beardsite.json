@@ -59,7 +59,7 @@
                     {
                         "name": "SSH",
                         "properties": {
-                            "protocol": "TCP",
+                            "protocol": "UDP",
                             "sourcePortRange": "*",
                             "destinationPortRange": "22",
                             "sourceAddressPrefix": "*",
@@ -82,7 +82,7 @@
                             "sourceAddressPrefix": "*",
                             "destinationAddressPrefix": "*",
                             "access": "Allow",
-                            "priority": 300,
+                            "priority": 310,
                             "direction": "Inbound",
                             "sourcePortRanges": [],
                             "destinationPortRanges": [],
@@ -366,7 +366,7 @@
                 "networkProfile": {
                     "networkInterfaces": [
                         {
-                            "id": "[resourceId('Microsoft.Network/networkInterfaces', variables('networkInterfaces_backendserver8892_name)]"
+                            "id": "[resourceId('Microsoft.Network/networkInterfaces', variables('networkInterfaces_backendserver8892_name'))]"
                         }
                     ]
                 }
